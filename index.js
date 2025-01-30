@@ -13,23 +13,32 @@ let zero = document.getElementById("0");
 let dec = document.getElementById("dec");
 let ScreenText = document.getElementById("ScreenText");
 let text;
-
+let itteration = false;
 let add = document.getElementById("add");
-
-
-
+let sub = document.getElementById("sub");
+let x = document.getElementById("x");
+let divide = document.getElementById("divide");
+let ac = document.getElementById("ac");
+let del = document.getElementById("del");
+let z = 0;
+let deleted;
 
 
 
 zero.addEventListener("click", (e) => {
     if(text == undefined){
         text = "0"
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+        z++;
+         itteration = true;
     }
     else{
         text = text + "0";
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+        z++;
+         itteration = true;
     }
+    
     
 });
 
@@ -40,23 +49,33 @@ one.addEventListener("click", (e) => {
 
     if(text == undefined){
         text = "1"
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+        z++;
+         itteration = true;
     }
     else{
         text = text + "1";
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+        z++;
+         itteration = true;
     }
+     
 });
 
 two.addEventListener("click", (e) => {
     if(text == undefined){
         text = "2"
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+        z++;
+         itteration = true;
     }
     else{
         text = text + "2";
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+        z++;
+         itteration = true;
     }
+    
     
 });
 
@@ -64,60 +83,90 @@ two.addEventListener("click", (e) => {
 three.addEventListener("click", (e) => {
     if(text == undefined){
         text = "3"
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
+         
     }
+    dleetd = true
     else{
         text = text + "3";
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
+
+    
+    
     
 });
 
 four.addEventListener("click", (e) => {
     if(text == undefined){
         text = "4"
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
     else{
         text = text + "4";
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
+    
     
 });
 
 five.addEventListener("click", (e) => {
     if(text == undefined){
         text = "5"
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
     else{
         text = text + "5";
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
+    
     
 });
 
 six.addEventListener("click", (e) => {
     if(text == undefined){
         text = "6"
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
     else{
         text = text + "6";
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
+    
     
 });
 
 seven.addEventListener("click", (e) => {
     if(text == undefined){
         text = "7"
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
     else{
         text = text + "7";
-        ScreenText.innerText = text
+        ScreenText.innerText = text;
+z++;
+         itteration = true;
+        
     }
+    
     
 });
 
@@ -125,11 +174,17 @@ eight.addEventListener("click", (e) => {
     if(text == undefined){
         text = "8"
         ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
     else{
         text = text + "8";
         ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
+    
+
     
 });
 
@@ -137,11 +192,17 @@ nine.addEventListener("click", (e) => {
     if(text == undefined){
         text = "9";
         ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
     else{
         text = text + "9";
         ScreenText.innerText = text;
+z++;
+
+         itteration = true;
     }
+    
     
 });
 
@@ -150,10 +211,14 @@ dec.addEventListener("click", (e) => {
     if(text == undefined){
         text = ".";
         ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
     else{
         text = text + ".";
         ScreenText.innerText = text;
+z++;
+         itteration = true;
     }
     
 });
@@ -162,13 +227,134 @@ add.addEventListener("click", (e) => {
     if(text == undefined){
         text = " + ";
         ScreenText.innerText = text;
+        z++;
+        z++;
+        z++;
+        
     }
     else{
         text = text + " + ";
         ScreenText.innerText = text;
+        z++;
+        z++;
+        z++;
+        
     }
     
 });
+
+sub.addEventListener("click", (e) => {
+    if(text == undefined){
+        text = " - ";
+        ScreenText.innerText = text;
+        z++;
+        z++;
+        z++;
+        
+    }
+    else{
+        text = text + " - ";
+        ScreenText.innerText = text;
+        z++;
+        z++;
+        z++;
+        
+    }
+    
+});
+
+x.addEventListener("click", (e) => {
+    if(text == undefined){
+        text = " x ";
+        ScreenText.innerText = text;
+        z++;
+        z++;
+        z++;
+        
+    }
+    else{
+        text = text + " x ";
+        ScreenText.innerText = text;
+        z++;
+        z++;
+        z++;
+
+        
+    }
+    
+});
+
+divide.addEventListener("click", (e) => {
+    if(text == undefined){
+        text = " / ";
+        ScreenText.innerText = text;
+        z++;
+        z++;
+        z++;
+        
+    }
+    else{
+        text = text + " / ";
+        ScreenText.innerText = text;
+        z++;
+        z++;
+        z++;
+        
+    }
+    
+});
+
+ac.addEventListener("click", (e) => {
+    text = "0";
+    deleted = true;
+    ScreenText.innerText = text;
+
+
+    
+});
+
+del.addEventListener("click", (e) => {
+    
+    let remove = text.split("");
+    z--;
+    
+    if(remove[z] == " "){
+        remove.pop();
+        remove.pop();
+        remove.pop();
+        
+        z--;
+        z--;
+        
+        console.log(z)
+    }
+    else{
+        
+        console.log(z)
+        remove.pop();
+    }
+
+    
+    console.log(remove)
+    
+
+    text = remove.toString();
+    text = text.replaceAll(',', '');
+    ScreenText.innerText = text;
+
+    console.log(text)
+    if(text == ""){
+        text = 0;
+        deleted = true;
+        ScreenText.innerText = text;
+
+    }
+   
+
+
+    
+});
+
 /*  ABOVE IS all math and screen variables needed to display button clicks ---------------------------------*/
 
 
@@ -179,67 +365,90 @@ add.addEventListener("click", (e) => {
 
 let eq = document.getElementById("eq")
 let mathEq;
+let Finaleq;
+let symbol;
+let detectorSymbol;
+
+
 
 eq.addEventListener("click", (e) => {
+    let test = text.split(" ")
+    for(i = 0; i < test.length; i++){
 
-    for(i = 0; i < text.length; i++){
 
-        if(text[i] == "+" || text[i] == "-" || text[i] == "*" || text[i] == "/"){
-            console.log("found");
+
+        
+        console.log(test)
+        switch(test[i]){
+            case "+":
+                symbol = "+";
+                detectorSymbol = true;
+                break;
+            case "-":
+                symbol = "-";
+                detectorSymbol = true;
+                break;
+            case "x":
+                symbol = "x";
+                detectorSymbol = true;
+                break;
+            case "/":
+                symbol = "/";
+                detectorSymbol = true;
+                break;
+            case " ":
+                detectorSymbol = true;
+                break;
+            default:
+                mathEq = test[i];
+                mathEq = parseInt(mathEq, "10");
+                console.log(mathEq);
+                
+                break;
         }
-        else if(text[i] == " "){
-            console.log("space");
+
+
+        if(i == 0){
+            
+            Finaleq = mathEq;
+            console.log(Finaleq);
+            
+        }
+        else if(detectorSymbol == false){
+            switch (symbol){
+                case "+":
+                    
+                    Finaleq = Finaleq + mathEq;
+                    console.log(Finaleq);
+                    break;
+                case "-":
+                    Finaleq = Finaleq - mathEq;
+                    console.log(Finaleq);
+                    break;
+                case "x":
+                    Finaleq = Finaleq * mathEq;
+                    console.log(Finaleq);
+                    break;
+                case "/":
+                    Finaleq = Finaleq / mathEq;
+                    console.log(Finaleq);
+                    break;
+            }
         }
         else{
-            mathEq = text[i];
-            mathEq = parseInt(mathEq, "10");
-            console.log(mathEq);
+            detectorSymbol = false;
+            
         }
+        
 
-        switch(text[i]){
-            case "+":
-            case "-":
-        }
-        switch (arithmeic) {
-            case "addition":
-                
-                FinalAnswer = first + second;
-                document.write(FinalAnswer);
-                break;
-            case "+":
-                FinalAnswer = first + second;
-                document.write(FinalAnswer);
-                break;
-            case "-":
-                FinalAnswer = first - second;
-                document.write(FinalAnswer);
-                break;
-            case "x":   
-                FinalAnswer = first * second;
-                document.write(FinalAnswer);
-                break;
-            case "/":   
-                FinalAnswer = first / second;
-                document.write(FinalAnswer);
-                break;
-            case "subtraction":
-                FinalAnswer = first - second;
-                document.write(FinalAnswer);
-                break;
+
+
+       
         
-            case "multiplication":
-                FinalAnswer = first * second;
-                document.write(FinalAnswer);
-                break;
+
         
-            case "division":
-                FinalAnswer = first / second;
-                document.write(FinalAnswer);
-                break;
-        
-            default:  // all other cases
-                document.write("unable to execute that")
-          }
+       
     }
+    ScreenText.innerText = Finaleq;
     
 });
