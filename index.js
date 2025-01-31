@@ -22,7 +22,7 @@ let ac = document.getElementById("ac");
 let del = document.getElementById("del");
 let z = 0;
 let deleted;
-
+let negative = document.getElementById("negative");
 
 
 zero.addEventListener("click", (e) => {
@@ -88,7 +88,7 @@ z++;
          itteration = true;
          
     }
-    dleetd = true
+    // dleetd = true
     else{
         text = text + "3";
         ScreenText.innerText = text;
@@ -304,10 +304,25 @@ divide.addEventListener("click", (e) => {
     
 });
 
+negative.addEventListener("click", (e) => {
+    if(text == undefined){
+        text = "-";
+        ScreenText.innerText = text;
+        z++;
+        
+    }
+    else{
+        text = text + "-";
+        ScreenText.innerText = text;
+        z++;
+    }
+    
+});
+
 ac.addEventListener("click", (e) => {
-    text = "0";
+    text = undefined;
     deleted = true;
-    ScreenText.innerText = text;
+    ScreenText.innerText = 0;
 
 
     
@@ -344,9 +359,9 @@ del.addEventListener("click", (e) => {
 
     console.log(text)
     if(text == ""){
-        text = 0;
+        text = undefined;
         deleted = true;
-        ScreenText.innerText = text;
+        ScreenText.innerText = 0;
 
     }
    
@@ -388,6 +403,8 @@ eq.addEventListener("click", (e) => {
                 symbol = "-";
                 detectorSymbol = true;
                 break;
+            // case "-":
+
             case "x":
                 symbol = "x";
                 detectorSymbol = true;
@@ -401,7 +418,7 @@ eq.addEventListener("click", (e) => {
                 break;
             default:
                 mathEq = test[i];
-                mathEq = parseInt(mathEq, "10");
+                mathEq = parseFloat(mathEq, "10");
                 console.log(mathEq);
                 
                 break;
@@ -449,6 +466,17 @@ eq.addEventListener("click", (e) => {
         
        
     }
-    ScreenText.innerText = Finaleq;
+    if(isNaN(Finaleq) == true){
+        console.log("worj");
+        ScreenText.innerText = "Error";
+        text = 0;
+        deleted = true;
+    }
+    else{
+        
+        ScreenText.innerText = Finaleq;
+        text = Finaleq;
+    }
+    
     
 });

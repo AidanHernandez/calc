@@ -46,7 +46,7 @@ main{
     display: flex;
     flex-flow: column;
     justify-content: space-around;
-    align-items: flex-end;
+    align-items: center;
     margin-top: 20px;
     height: 200px;
 }
@@ -55,7 +55,7 @@ main{
     background-color: #0b67d0;
 }
 
- .add, .sub, .x, .divide, .left-par, .right-par, .del, .AC{
+ .add, .sub, .x, .divide, .negative, .del, .AC{
     background-color: #65b3dd;
 }
 
